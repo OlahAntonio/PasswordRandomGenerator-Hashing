@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS Passwords;
+USE Passwords;
+
+CREATE TABLE IF NOT EXISTS user_passwords (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    password VARCHAR(100) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL
+);
+
+SHOW TABLES;
+
+SELECT * FROM user_passwords;
